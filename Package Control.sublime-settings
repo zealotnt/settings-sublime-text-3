@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"API Blueprint",
+		"FileDiffs",
+		"Git",
+		"GoSublime",
+		"MarkdownEditing",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeAStyleFormatter",
+		"Terminal",
+		"TrailingSpaces"
+	]
+}
