@@ -35,7 +35,7 @@
 								},
 				"open_automatically" : false // will close the view/tab and launch the application
 			},
-			//application n
+			//application 3
 			{
 				"caption": "Chrome",
 				"id": "side-bar-files-open-with-chrome",
@@ -49,7 +49,22 @@
 						},
 				"open_automatically" : false // will close the view/tab and launch the application
 			},
+			//application 4
+			{
+				"caption": "DocumentViewer",
+				"id": "side-bar-files-open-with-document-viewer",
 
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "/usr/bin/evince",
+									"extensions":"pdf", //open all even folders
+									"args":[]
+								},
+				"open_automatically" : true // will close the view/tab and launch the application
+			},
+
+			//separator
 			{"caption":"-"}
 		]
 	}

@@ -2,8 +2,7 @@
 	"extensions":
 	[
 		"md",
-		"mdown",
-		"txt"
+		"mdown"
 	],
 
 	// "color_scheme": "Packages/MarkdownEditing/MarkdownEditor.tmTheme",
@@ -23,7 +22,7 @@
 	// Layout
 	"draw_centered": true,
 	"word_wrap": true,
-	"wrap_width": 80,
+	"wrap_width": 90,
 	"rulers": [],
 
 	// Line

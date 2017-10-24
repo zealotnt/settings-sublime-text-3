@@ -5,14 +5,25 @@
 	],
 	"installed_packages":
 	[
-		"API Blueprint",
+		"AdvancedNewFile",
+		"Babel",
+		"Better CoffeeScript",
+		"CTags",
+		"EditorConfig",
+		"Emmet",
 		"FileDiffs",
-		"Git",
+		"FileHeader",
+		"GitGutter",
 		"GoSublime",
+		"HTML-CSS-JS Prettify",
+		"Markdown Preview",
 		"MarkdownEditing",
 		"Package Control",
+		"Pretty JSON",
 		"SideBarEnhancements",
 		"SublimeAStyleFormatter",
+		"SublimeLinter",
+		"SyncedSideBar",
 		"Terminal",
 		"TrailingSpaces"
 	]

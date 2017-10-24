@@ -1,5 +1,13 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"draw_indent_guides": true,
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -22,12 +30,20 @@
 		"*.psd",
 		"*.db",
 		"*.sublime-workspace",
-		"*.d"
+		"*.d",
+		"*.o.*",
+		"*.su"
 	],
 	"font_face": "Consolas",
 	"font_size": 10,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"preview_on_click": false,
+	"show_encoding": true,
+	"telex": true
 }
