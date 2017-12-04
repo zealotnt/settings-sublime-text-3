@@ -43,6 +43,8 @@
             }
         ]
     },
+    { "keys": ["ctrl+b", "ctrl+n"], "command": "git_gutter_next_change" },
+    { "keys": ["ctrl+b", "ctrl+p"], "command": "git_gutter_prev_change" },
 
     //
 	// View changing
@@ -99,7 +101,6 @@
 	//
 	// Clipboard modification
 	//
-	{ "keys": ["ctrl+b", "ctrl+p"], "command": "copy_path" },
 	{ "keys": ["ctrl+k", "ctrl+p"], "command": "copy_path" },
 	{ "keys": ["ctrl+shift+a"], "command": "select_all" },
 

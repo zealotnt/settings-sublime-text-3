@@ -4,7 +4,7 @@
         "count": 1,
         "modifiers": ["ctrl"],
         "press_command": "drag_select",
-        "command": "navigate_to_definition"
+        "command": "goto_definition"
     },
     {
         "button": "button2",
