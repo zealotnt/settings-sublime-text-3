@@ -30,7 +30,7 @@
     you write your own header files. The file name should be a language,
     "Python.tmpl" for example.
     */
-    "custom_template_header_path": "",
+    "custom_template_header_path": "~/.config/sublime-text-3/Packages/User/FileHeader/header",
     /*
     Set your custom template body path here, it is a directory in which
     you write your own body files. The file name should be a language,
@@ -44,7 +44,7 @@
         body
 
     */
-    "custom_template_body_path": "",
+    "custom_template_body_path": "~/.config/sublime-text-3/Packages/User/FileHeader/body",
     /*
     Whether show input panel when you add header. The default file which
     you add header to is the current file you edit.
@@ -222,7 +222,7 @@
         /*
         Email
         */
-        "email": "email@example.com"
+        "email": "tranminhtam.10192@gmail.com"
 
         // You can add more here......
     },
