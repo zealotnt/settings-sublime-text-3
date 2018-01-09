@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"ANSIescape",
 		"Babel",
 		"Better CoffeeScript",
 		"BracketHighlighter",
