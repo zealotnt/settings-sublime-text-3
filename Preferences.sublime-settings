@@ -44,5 +44,6 @@
 	"line_padding_top": 1,
 	"preview_on_click": false,
 	"show_encoding": true,
-	"telex": true
+	"telex": true,
+	"theme": "Adaptive.sublime-theme"
 }
