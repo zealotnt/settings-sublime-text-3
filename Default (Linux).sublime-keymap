@@ -2,7 +2,7 @@
 	//
 	// Text Modification
 	//
-	{ "keys": ["ctrl+w"], "command": "close" },
+	{ "keys": ["ctrl+w"], "command": "close_file" }, // close -> will close sublime after no file left
 	// { "keys": ["ctrl+w"], "command": "delete_word", "args": {"forward": false, "sub_words": true}},
 	{ "keys": ["ctrl+k", "ctrl+u"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"} },
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
@@ -14,7 +14,7 @@
 	//
 	// Text selection
 	//
-	{ "keys": ["ctrl+shift+w"], "command": "expand_selection", "args": {"to": "word"} },
+	// { "keys": ["ctrl+shift+w"], "command": "expand_selection", "args": {"to": "word"} }, what is this for ???
 	{ "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
 	{ "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
 	{ "keys": ["ctrl+shift+a"], "command": "move_to", "args": {"to": "bol", "extend": true} },
@@ -49,7 +49,7 @@
     //
 	// View changing
 	//
-	{ "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+	{ "keys": ["ctrl+shift+w"], "command": "reopen_last_file" },
 	{ "keys": ["ctrl+k","ctrl+m"], "command": "toggle_minimap" },
 	{ "keys": ["ctrl+shift+o"], "command": "prompt_add_folder" },
 	{ "keys": ["shift+f2"], "command": "rename_file", "args": { "paths": ["$file"] } },
@@ -137,8 +137,12 @@
 		}]
 	},
 	{
-		"keys": ["ctrl+k", "ctrl+t"],
+		"keys": ["ctrl+shift+t", "ctrl+shift+p"],
 		"command": "open_terminal_project_folder"
+	},
+	{
+		"keys": ["ctrl+shift+t", "ctrl+shift+h"],
+		"command": "open_terminal"
 	},
 	// {
 	// 	"keys": ["ctrl+shift+f"],
