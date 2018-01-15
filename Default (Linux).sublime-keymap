@@ -29,24 +29,24 @@
 	{ "keys": ["ctrl+shift+k"], "command": "move", "args": {"by": "pages", "forward": false} },
 	{ "keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "pages", "forward": true} },
 	{ "keys": ["ctrl+shift+j"], "command": "move", "args": {"by": "pages", "forward": true} },
-    {
-        "keys": [
-            "ctrl+b", "ctrl+m"
-        ],
-        "args": {
-            "action": "matching_pair"
-        },
-        "command": "run_emmet_action",
-        "context": [
-            {
-                "key": "emmet_action_enabled.matching_pair"
-            }
-        ]
-    },
-    { "keys": ["ctrl+b", "ctrl+n"], "command": "git_gutter_next_change" },
-    { "keys": ["ctrl+b", "ctrl+p"], "command": "git_gutter_prev_change" },
+	{
+		"keys": [
+			"ctrl+b", "ctrl+m"
+		],
+		"args": {
+			"action": "matching_pair"
+		},
+		"command": "run_emmet_action",
+		"context": [
+			{
+				"key": "emmet_action_enabled.matching_pair"
+			}
+		]
+	},
+	{ "keys": ["ctrl+b", "ctrl+n"], "command": "git_gutter_next_change" },
+	{ "keys": ["ctrl+b", "ctrl+p"], "command": "git_gutter_prev_change" },
 
-    //
+	//
 	// View changing
 	//
 	{ "keys": ["ctrl+shift+t", "ctrl+shift+t"], "command": "reopen_last_file" },
@@ -61,25 +61,25 @@
 	{ "keys": ["alt+enter"], "command": "goto_definition" },
 	{ "keys": ["alt+left"], "command": "jump_back" },
 	{ "keys": ["alt+right"], "command": "jump_forward" },
-    //
-    // Modified Tab Navigation
-    //
-    {
-        "keys": ["ctrl+tab"],
-        "command": "next_view_in_pane"
+	//
+	// Modified Tab Navigation
+	//
+	{
+		"keys": ["ctrl+tab"],
+		"command": "next_view"
 	},
-    {
-        "keys": ["alt+k"],
-        "command": "next_view_in_pane"
+	{
+		"keys": ["alt+k"],
+		"command": "next_view"
 	},    {
-        "keys": ["alt+j"],
-        "command": "prev_view_in_pane"
+		"keys": ["alt+j"],
+		"command": "prev_view"
 	},
-    {
-        "keys": ["ctrl+shift+tab"],
-        "command": "prev_view_in_pane"
-    },
-    //
+	{
+		"keys": ["ctrl+shift+tab"],
+		"command": "prev_view"
+	},
+	//
 	// Pane navigation
 	//
 	{ "keys": ["ctrl+b", "ctrl+enter"], "command": "build" },
@@ -196,12 +196,12 @@
 	},
 
 	{ "keys": ["k"], "command": "move", "args": {"by": "lines", "forward": false}, "context":
-	    [ {"key": "control", "operand": "sidebar_tree"} ] },
+		[ {"key": "control", "operand": "sidebar_tree"} ] },
 	{ "keys": ["l"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
-	    [ {"key": "control", "operand": "sidebar_tree"} ] },
+		[ {"key": "control", "operand": "sidebar_tree"} ] },
 
 	{ "keys": ["d"], "command": "move", "args": {"by": "pages", "forward": true}, "context":
-	    [ {"key": "control", "operand": "sidebar_tree"} ] },
+		[ {"key": "control", "operand": "sidebar_tree"} ] },
 	{ "keys": ["u"], "command": "move", "args": {"by": "pages", "forward": false}, "context":
-	    [ {"key": "control", "operand": "sidebar_tree"} ] },
+		[ {"key": "control", "operand": "sidebar_tree"} ] },
 ]
