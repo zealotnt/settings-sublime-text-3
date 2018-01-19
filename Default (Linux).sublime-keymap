@@ -49,7 +49,7 @@
     //
 	// View changing
 	//
-	{ "keys": ["ctrl+shift+w"], "command": "reopen_last_file" },
+	{ "keys": ["ctrl+shift+t", "ctrl+shift+t"], "command": "reopen_last_file" },
 	{ "keys": ["ctrl+k","ctrl+m"], "command": "toggle_minimap" },
 	{ "keys": ["ctrl+shift+o"], "command": "prompt_add_folder" },
 	{ "keys": ["shift+f2"], "command": "rename_file", "args": { "paths": ["$file"] } },
