@@ -1,0 +1,1 @@
+mklink /H "Default (Windows).sublime-keymap" "Default (Linux).sublime-keymap"
