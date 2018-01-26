@@ -49,6 +49,7 @@
 	//
 	// View changing
 	//
+	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 	{ "keys": ["ctrl+shift+t", "ctrl+shift+t"], "command": "reopen_last_file" },
 	{ "keys": ["ctrl+k","ctrl+m"], "command": "toggle_minimap" },
 	{ "keys": ["ctrl+shift+o"], "command": "prompt_add_folder" },
