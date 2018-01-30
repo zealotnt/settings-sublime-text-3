@@ -29,20 +29,8 @@
 	{ "keys": ["ctrl+shift+k"], "command": "move", "args": {"by": "pages", "forward": false} },
 	{ "keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "pages", "forward": true} },
 	{ "keys": ["ctrl+shift+j"], "command": "move", "args": {"by": "pages", "forward": true} },
-	{
-		"keys": [
-			"ctrl+b", "ctrl+m"
-		],
-		"args": {
-			"action": "matching_pair"
-		},
-		"command": "run_emmet_action",
-		"context": [
-			{
-				"key": "emmet_action_enabled.matching_pair"
-			}
-		]
-	},
+	{ "keys": ["ctrl+b", "ctrl+m"], "args": {"action": "matching_pair"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.matching_pair"}]},
+	{ "keys": ["ctrl+,"], "args": {"action": "matching_pair"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.matching_pair"}]},
 	{ "keys": ["ctrl+b", "ctrl+n"], "command": "git_gutter_next_change" },
 	{ "keys": ["ctrl+b", "ctrl+p"], "command": "git_gutter_prev_change" },
 
