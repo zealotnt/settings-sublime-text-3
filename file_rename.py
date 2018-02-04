@@ -39,7 +39,7 @@ class FileRenameCommand(sublime_plugin.TextCommand):
                 sublime.status_message("Unable to rename: " + str(e))
 
 # [Ref](https://superuser.com/questions/683766/renaming-open-files-in-sublime-text-2)
-file_rename.py
+# file_rename.py
 import sublime
 import sublime_plugin
 import os
@@ -48,8 +48,8 @@ import functools
 
 class RenameFileCommand(sublime_plugin.WindowCommand):
     def run(self, paths):
-        if paths[0] == "":
-            paths[0] = self.window.active_view().file_name()
+        # if paths[0] == "":
+        paths[0] = self.window.active_view().file_name()
         branch, leaf = os.path.split(paths[0])
         v = self.window.show_input_panel("New Name:", leaf, functools.partial(self.on_done, paths[0], branch), None, None)
         name, ext = os.path.splitext(leaf)
