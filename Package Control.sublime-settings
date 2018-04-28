@@ -11,15 +11,18 @@
 		"Better CoffeeScript",
 		"BracketHighlighter",
 		"CTags",
+		"Cucumber",
 		"EditorConfig",
 		"Emmet",
+		"Ethereum",
 		"FileDiffs",
 		"FileHeader",
 		"GitGutter",
 		"GoSublime",
 		"HTML-CSS-JS Prettify",
-		"Markdown Preview",
+		"Hyperledger Composer",
 		"MarkdownEditing",
+		"MarkdownPreview",
 		"Package Control",
 		"Pretty JSON",
 		"SideBarEnhancements",
@@ -27,6 +30,7 @@
 		"SublimeLinter",
 		"SyncedSideBar",
 		"Terminal",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"TypeScript"
 	]
 }

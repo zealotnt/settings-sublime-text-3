@@ -40,6 +40,7 @@
 	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 	{ "keys": ["ctrl+shift+t", "ctrl+shift+t"], "command": "reopen_last_file" },
 	{ "keys": ["ctrl+k","ctrl+m"], "command": "toggle_minimap" },
+	{ "keys": ["ctrl+k","ctrl+s"], "command": "toggle_side_bar" },
 	{ "keys": ["ctrl+shift+o"], "command": "prompt_add_folder" },
 	{ "keys": ["shift+f2"], "command": "rename_file", "args": { "paths": ["$file"] } },
 	{ "keys": ["f5"], "command": "refresh_folder_list" },
