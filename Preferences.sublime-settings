@@ -45,5 +45,6 @@
 	"preview_on_click": false,
 	"show_encoding": true,
 	"telex": true,
-	"theme": "Adaptive.sublime-theme"
+	"theme": "Adaptive.sublime-theme",
+	"word_wrap": "true"
 }
