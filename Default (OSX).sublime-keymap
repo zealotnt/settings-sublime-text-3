@@ -26,12 +26,12 @@
 	//
 	// Cursor movement
 	//
-	// { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-	// { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
-	// { "keys": ["super+shift+up"], "command": "move", "args": {"by": "pages", "forward": false} },
-	// { "keys": ["super+shift+k"], "command": "move", "args": {"by": "pages", "forward": false} },
-	// { "keys": ["super+shift+down"], "command": "move", "args": {"by": "pages", "forward": true} },
-	// { "keys": ["super+shift+j"], "command": "move", "args": {"by": "pages", "forward": true} },
+	{ "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+	{ "keys": ["ctrl+shift+up"], "command": "move", "args": {"by": "pages", "forward": false} },
+	{ "keys": ["ctrl+shift+k"], "command": "move", "args": {"by": "pages", "forward": false} },
+	{ "keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "pages", "forward": true} },
+	{ "keys": ["ctrl+shift+j"], "command": "move", "args": {"by": "pages", "forward": true} },
 	{ "keys": ["ctrl+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
 	{ "keys": ["ctrl+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
 	{ "keys": ["ctrl+b", "ctrl+m"], "args": {"action": "matching_pair"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.matching_pair"}]},

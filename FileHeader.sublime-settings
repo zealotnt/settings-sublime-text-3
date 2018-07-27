@@ -30,7 +30,8 @@
     you write your own header files. The file name should be a language,
     "Python.tmpl" for example.
     */
-    "custom_template_header_path": "~/.config/sublime-text-3/Packages/User/FileHeader/header",
+    "custom_template_header_path": "/Users/zealot/Library/Application Support/Sublime Text 3/Packages/User/FileHeader/header",
+    // "custom_template_header_path": "~/.config/sublime-text-3/Packages/User/FileHeader/header",
     /*
     Set your custom template body path here, it is a directory in which
     you write your own body files. The file name should be a language,

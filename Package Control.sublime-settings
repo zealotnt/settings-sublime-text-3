@@ -28,6 +28,7 @@
 		"SublimeLinter",
 		"SyncedSideBar",
 		"Terminal",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"YAML Nav"
 	]
 }
