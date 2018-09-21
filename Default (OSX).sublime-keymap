@@ -12,6 +12,17 @@
 		"keys": ["ctrl+shift+o"], "command": "astyleformat",
 		"context": [{"key": "astyleformat_is_enabled", "operator": "equal", "operand": ""}]
 	},
+	{
+		"keys": ["enter"], "command": "commit_completion", "context": [
+			{ "key": "auto_complete_visible" }
+		]
+	},
+	{
+		"keys": ["tab"], "command": "commit_completion", "context": [
+			{ "key": "auto_complete_visible" }
+		]
+	},
+	{ "keys": ["super+i"], "command": "auto_complete" },
 
 	//
 	// Text selection
@@ -26,6 +37,8 @@
 	//
 	// Cursor movement
 	//
+	{"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 20.0}, "context": [{ "key": "setting.command_mode" }]},
+	{"keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -20.0}, "context": [{"key": "setting.command_mode"}]},
 	{ "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
 	{ "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
 	{ "keys": ["ctrl+shift+up"], "command": "move", "args": {"by": "pages", "forward": false} },
@@ -40,6 +53,7 @@
 	{ "keys": ["ctrl+b", "ctrl+p"], "command": "git_gutter_prev_change" },
 	{ "keys": ["f3"], "command": "find_next" },
 	{ "keys": ["shift+f3"], "command": "find_prev" },
+	{ "keys": ["super+k"], "command": "find_under" },
 
 	//
 	// View changing
@@ -57,6 +71,9 @@
 	{ "keys": ["alt+enter"], "command": "goto_definition" },
 	{ "keys": ["alt+left"], "command": "jump_back" },
 	{ "keys": ["alt+right"], "command": "jump_forward" },
+	{ "keys": ["alt+["], "command": "jump_back" },
+	{ "keys": ["alt+]"], "command": "jump_forward" },
+
 	//
 	// Modified Tab Navigation
 	//
@@ -65,10 +82,11 @@
 		"command": "next_view"
 	},
 	{
-		"keys": ["alt+k"],
+		"keys": ["alt+l"],
 		"command": "next_view"
-	},    {
-		"keys": ["alt+j"],
+	},
+	{
+		"keys": ["alt+h"],
 		"command": "prev_view"
 	},
 	{
@@ -156,6 +174,7 @@
 	{ "keys": ["super+k", "super+f"], "command": "reveal_in_side_bar"},
 	{ "keys": ["alt+\\"], "command": "focus_side_bar" },
 	{ "keys": ["super+\\"], "command": "focus_side_bar" },
+	{ "keys": ["super+t"], "command": "focus_side_bar" },
 	{
 		"keys": ["h"],
 		"command": "move",
@@ -166,7 +185,7 @@
 		"context": [ {"key": "control", "operand": "sidebar_tree"} ]
 	},
 	{
-		"keys": ["ctrl+shift+h"],
+		"keys": ["ctrl+u"],
 		"command": "move",
 		"args": {
 			"by": "pages",
@@ -184,7 +203,7 @@
 		"context": [ {"key": "control", "operand": "sidebar_tree"} ]
 	},
 	{
-		"keys": ["ctrl+shift+j"],
+		"keys": ["ctrl+d"],
 		"command": "move",
 		"args": {
 			"by": "pages",
@@ -209,19 +228,18 @@
 		}, "context": [ {"key": "control", "operand": "sidebar_tree"} ]
 	},
 	{
-		"keys": ["d"],
-		"command": "move",
+		"keys": ["g"],
+		"command": "move_to",
 		"args": {
-			"by": "pages",
-			"forward": true
+			"to": "bol",
 		}, "context": [ {"key": "control", "operand": "sidebar_tree"} ]
 	},
 	{
-		"keys": ["u"],
-		"command": "move",
+		"keys": ["G"],
+		"command": "move_to",
 		"args": {
-			"by": "pages",
-			"forward": false
-		}, "context":[ {"key": "control", "operand": "sidebar_tree"} ]
+			"to": "eol",
+		}, "context": [ {"key": "control", "operand": "sidebar_tree"} ]
 	},
+
 ]
