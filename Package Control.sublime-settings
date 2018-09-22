@@ -5,13 +5,18 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AdvancedNewFile",
 		"ANSIescape",
 		"Babel",
 		"Better CoffeeScript",
+		"BetterFindBuffer",
 		"BracketHighlighter",
+		"CloseOtherWindows",
 		"CTags",
 		"Cucumber",
+		"DashDoc",
+		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"Emmet",
 		"Ethereum",
@@ -23,14 +28,18 @@
 		"Hyperledger Composer",
 		"MarkdownEditing",
 		"MarkdownPreview",
+		"NeoVintageous",
 		"Package Control",
+		"PackageResourceViewer",
 		"Pretty JSON",
+		"Protocol Buffer Syntax",
 		"SideBarEnhancements",
 		"SublimeAStyleFormatter",
 		"SublimeLinter",
 		"SyncedSideBar",
 		"Terminal",
 		"TrailingSpaces",
-		"TypeScript"
+		"TypeScript",
+		"YAML Nav"
 	]
 }

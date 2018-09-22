@@ -1,4 +1,5 @@
 {
+	"auto_complete_cycle": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"draw_indent_guides": true,
@@ -33,17 +34,27 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"FileHeader",
+		"Six",
+		"Vintage",
+		"Vintageous"
 	],
 	"indent_guide_options":
 	[
 		"draw_normal",
 		"draw_active"
 	],
+	"index_files": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"preview_on_click": false,
+	"rulers":
+	[
+		79
+	],
 	"show_encoding": true,
 	"telex": true,
-	"theme": "Adaptive.sublime-theme"
+	"theme": "Adaptive.sublime-theme",
+	"vintage_start_in_command_mode": true,
+	"word_wrap": "true"
 }
