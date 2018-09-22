@@ -1,4 +1,52 @@
 [
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	// Overwrite default keymap of packages
+	//
+	// - ProjectManager
+	{
+		"keys": ["super+ctrl+o"],
+		"command": "project_manager", "args": {"action": "new"}
+	},
+
+	// - SublimeCodeIntel
+	{ "keys": ["shift+ctrl+space"], "command": "code_intel_auto_complete" },
+	{ "keys": ["super+alt+ctrl+up"], "command": "goto_python_definition"},
+	{ "keys": ["super+alt+ctrl+left"], "command": "back_to_python_definition"},
+
+	// - Terminal
+	{
+		"keys": ["super+shift+t", "super+shift+p"],
+		"command": "open_terminal_project_folder"
+	},
+	{
+		"keys": ["super+shift+t", "super+shift+h"],
+		"command": "open_terminal"
+	},
+
+	// - Emmet
+	{
+		"keys": ["ctrl+b", "ctrl+m"], "args": {"action": "matching_pair"},
+		"command": "run_emmet_action",
+		"context": [{"key": "emmet_action_enabled.matching_pair"}]
+	},
+	{
+		"keys": ["ctrl+,"], "args": {"action": "matching_pair"},
+		"command": "run_emmet_action",
+		"context": [{"key": "emmet_action_enabled.matching_pair"}]
+	},
+
+	// - GitGutter
+	{ "keys": ["ctrl+b", "ctrl+n"], "command": "git_gutter_next_change" },
+	{ "keys": ["ctrl+b", "ctrl+p"], "command": "git_gutter_prev_change" },
+
+	// - AdvancedNewFile
+	{ "keys": ["super+k", "super+n"], "command": "advanced_new_file_new"},
+
+	//
+	// End Overwritten
+	// ========================================================================
+
+
 	{ "keys": ["super+."], "command": "edit_settings", "args": {"base_file": "${packages}/Default/Default (OSX).sublime-keymap"} },
 
 	//
@@ -47,10 +95,6 @@
 	{ "keys": ["ctrl+shift+j"], "command": "move", "args": {"by": "pages", "forward": true} },
 	{ "keys": ["ctrl+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
 	{ "keys": ["ctrl+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
-	{ "keys": ["ctrl+b", "ctrl+m"], "args": {"action": "matching_pair"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.matching_pair"}]},
-	{ "keys": ["ctrl+,"], "args": {"action": "matching_pair"}, "command": "run_emmet_action", "context": [{"key": "emmet_action_enabled.matching_pair"}]},
-	{ "keys": ["ctrl+b", "ctrl+n"], "command": "git_gutter_next_change" },
-	{ "keys": ["ctrl+b", "ctrl+p"], "command": "git_gutter_prev_change" },
 	{ "keys": ["f3"], "command": "find_next" },
 	{ "keys": ["shift+f3"], "command": "find_prev" },
 	{ "keys": ["super+k"], "command": "find_under" },
@@ -59,7 +103,7 @@
 	// View changing
 	//
 	// { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
-	{ "keys": ["super+shift+t"], "command": "reopen_last_file" },
+	{ "keys": ["super+shift+t", "super+shift+t"], "command": "reopen_last_file" },
 	{ "keys": ["super+k","super+m"], "command": "toggle_minimap" },
 	{ "keys": ["super+k","super+s"], "command": "toggle_side_bar" },
 	{ "keys": ["super+shift+o"], "command": "prompt_add_folder" },
@@ -143,7 +187,6 @@
 	},
 
 	{ "keys": ["ctrl+q"], "command": "file_diff_menu" },
-	{ "keys": ["super+k", "super+n"], "command": "advanced_new_file_new"},
 	{
 		"keys": ["tab"],
 		"command": "insert",
@@ -151,14 +194,6 @@
 		"context": [{
 			"key": "setting.anf_panel"
 		}]
-	},
-	{
-		"keys": ["super+shift+t", "super+shift+p"],
-		"command": "open_terminal_project_folder"
-	},
-	{
-		"keys": ["super+shift+t", "super+shift+h"],
-		"command": "open_terminal"
 	},
 	// {
 	// 	"keys": ["ctrl+shift+f"],
@@ -242,5 +277,4 @@
 			"to": "eol",
 		}, "context": [ {"key": "control", "operand": "sidebar_tree"} ]
 	},
-
 ]
