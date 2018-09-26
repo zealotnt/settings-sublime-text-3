@@ -62,6 +62,13 @@
 		"command": "close_window"
 	},
 
+	// - vintage-lines
+	{
+		"keys": ["ctrl+k", "ctrl+t"],
+		"command": "toggle_setting",
+		"args": {"setting": "vintage_lines.force_mode"}
+	},
+
 	//
 	// End Overwritten
 	// ========================================================================

@@ -1,4 +1,5 @@
 {
+	"always_show_minimap_viewport": true,
 	"auto_complete_cycle": true,
 	"bold_folder_labels": true,
 	"close_windows_when_empty": true,
@@ -30,16 +31,26 @@
 		"*.o.*",
 		"*.su"
 	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"tmp"
+	],
 	"font_face": "Consolas",
-	"font_size": 11,
+	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"FileHeader",
 		"Hyperledger Composer",
 		"Six",
+		"TypeScript",
 		"Vintage",
-		"Vintageous"
+		"Vintageous",
+		"YAML Nav"
 	],
 	"indent_guide_options":
 	[
@@ -47,6 +58,7 @@
 		"draw_active"
 	],
 	"index_files": true,
+	"line_numbers": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"preview_on_click": false,
@@ -58,6 +70,7 @@
 	"telex": true,
 	"theme": "Adaptive.sublime-theme",
 	"vintage_start_in_command_mode": true,
+	"vintageous_use_ctrl_keys": true,
 	"vintageous_use_sys_clipboard": true,
 	"word_wrap": "true"
 }

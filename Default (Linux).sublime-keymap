@@ -1,4 +1,9 @@
 [
+    {
+        "keys": ["ctrl+alt+o"],
+        "command": "project_manager", "args": {"action": "new"}
+    },
+
 	{
 		// mac-ish
 		"keys": ["alt+."],
@@ -89,7 +94,6 @@
 	//
 	// View changing
 	//
-	{ "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
 	{
 		// mac-ish
 		"keys": ["alt+shift+t", "alt+shift+t"], "command": "reopen_last_file"
