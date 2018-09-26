@@ -42,6 +42,26 @@
 	// - AdvancedNewFile
 	{ "keys": ["super+k", "super+n"], "command": "advanced_new_file_new"},
 
+	// - SublimeFileBrowser
+	{
+	  "keys": ["f1"],
+	  "command": "dired",
+	  "args": {
+	    "immediate": true,
+	    "single_pane": true,
+	    "other_group": "right",
+	    "project": true
+	  }
+	},
+
+	// - sublime-yaml-nav
+	{
+		// make sure that close-windows hotkey still works
+		// if I forgot to disable it using PackageResourceViewer
+		"keys": ["super+shift+w"],
+		"command": "close_window"
+	},
+
 	//
 	// End Overwritten
 	// ========================================================================
@@ -97,7 +117,6 @@
 	{ "keys": ["ctrl+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
 	{ "keys": ["f3"], "command": "find_next" },
 	{ "keys": ["shift+f3"], "command": "find_prev" },
-	{ "keys": ["super+k"], "command": "find_under" },
 
 	//
 	// View changing

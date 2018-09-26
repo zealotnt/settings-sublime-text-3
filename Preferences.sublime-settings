@@ -36,6 +36,7 @@
 	"ignored_packages":
 	[
 		"FileHeader",
+		"Hyperledger Composer",
 		"Six",
 		"Vintage",
 		"Vintageous"
@@ -57,5 +58,6 @@
 	"telex": true,
 	"theme": "Adaptive.sublime-theme",
 	"vintage_start_in_command_mode": true,
+	"vintageous_use_sys_clipboard": true,
 	"word_wrap": "true"
 }
