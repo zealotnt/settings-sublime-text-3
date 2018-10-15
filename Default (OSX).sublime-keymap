@@ -69,6 +69,34 @@
 		"args": {"setting": "vintage_lines.force_mode"}
 	},
 
+    {
+        "keys": ["super+shift+;"],
+        "command": "ace_jump_word"
+    },
+    {
+        "keys": ["super+shift+'"],
+        "command": "ace_jump_char"
+    },
+    {
+        "keys": ["super+shift+."],
+        "command": "ace_jump_line"
+    },
+    {
+        "keys": ["super+shift+,"],
+        "command": "ace_jump_within_line"
+    },
+    {
+        "keys": ["ctrl+;"],
+        "command": "ace_jump_select"
+    },
+    {
+        "keys": ["ctrl+'"],
+        "command": "ace_jump_add_cursor"
+    },
+    {
+        "keys": ["ctrl+."],
+        "command": "ace_jump_after"
+    },
 	//
 	// End Overwritten
 	// ========================================================================
@@ -182,6 +210,9 @@
 	{ "keys": ["super+b", "super+shift+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
 	{ "keys": ["super+b", "super+shift+right"], "command": "move_to_neighboring_group" },
 
+	// { "keys": ["ctrl+w", "h"], "command": "focus_neighboring_group", "args": {"forward": false} },
+	// { "keys": ["ctrl+w", "l"], "command": "focus_neighboring_group", "args": {"forward": true} },
+
 
 	//
 	// Clipboard modification
@@ -194,7 +225,11 @@
 	//
 	// New file, Tools
 	//
-	{ "keys": ["super+o", "super+o"], "command": "prompt_open_file" },
+	{
+		// To open using absolute path on MAC OS
+		// https://superuser.com/questions/467693/how-to-open-file-using-only-keyboard-in-sublime-text
+		"keys": ["super+o", "super+o"], "command": "prompt_open_file"
+	},
 	{
 		"keys": ["super+o", "super+c"],
 		"command": "side_bar_open_in_browser",

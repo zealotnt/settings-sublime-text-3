@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"AceJump",
 		"AdvancedNewFile",
 		"ANSIescape",
 		"Babel",
@@ -24,11 +25,13 @@
 		"FileHeader",
 		"GitGutter",
 		"GitSavvy",
+		"GoSublime",
 		"HTML-CSS-JS Prettify",
 		"Hyperledger Composer",
 		"MarkdownEditing",
 		"MarkdownPreview",
 		"NeoVintageous",
+		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
 		"Pretty JSON",

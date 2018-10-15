@@ -1,6 +1,24 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_complete_cycle": true,
+	"binary_file_patterns":
+	[
+		"node_modules/",
+		"tags",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
 	"bold_folder_labels": true,
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
@@ -40,7 +58,7 @@
 		"tmp"
 	],
 	"font_face": "Consolas",
-	"font_size": 12,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -49,8 +67,7 @@
 		"Six",
 		"TypeScript",
 		"Vintage",
-		"Vintageous",
-		"YAML Nav"
+		"Vintageous"
 	],
 	"indent_guide_options":
 	[
