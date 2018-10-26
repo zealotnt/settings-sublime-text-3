@@ -1,0 +1,7 @@
+// Settings in here override those in "GitSavvy/GitSavvy.sublime-settings",
+
+{
+	// https://github.com/divmain/GitSavvy/issues/565
+	"vintageous_friendly": true,
+	"vintageous_enter_insert_mode": true,
+}
