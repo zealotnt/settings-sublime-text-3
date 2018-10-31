@@ -3,6 +3,8 @@
 	"auto_complete_cycle": true,
 	"binary_file_patterns":
 	[
+		// these folder still shown in sidebar but not indexed
+		"dist/",
 		"node_modules/",
 		"tags",
 		"*.jpg",
@@ -26,6 +28,7 @@
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
+		// these files wont be showed in sidebar, and not indexed also
 		"*.pyc",
 		"*.pyo",
 		"*.exe",
@@ -51,6 +54,7 @@
 	],
 	"folder_exclude_patterns":
 	[
+		// these folders wont be showed in sidebar, and not indexed also
 		".svn",
 		".git",
 		".hg",
