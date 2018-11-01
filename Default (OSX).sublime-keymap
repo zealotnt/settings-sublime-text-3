@@ -44,14 +44,14 @@
 
 	// - SublimeFileBrowser
 	{
-	  "keys": ["f1"],
-	  "command": "dired",
-	  "args": {
-	    "immediate": true,
-	    "single_pane": true,
-	    "other_group": "right",
-	    "project": true
-	  }
+		"keys": ["f1"],
+		"command": "dired",
+		"args": {
+			"immediate": true,
+			"single_pane": true,
+			"other_group": "right",
+			"project": true
+		}
 	},
 
 	// - sublime-yaml-nav
@@ -69,36 +69,37 @@
 		"args": {"setting": "vintage_lines.force_mode"}
 	},
 
-    {
-        "keys": ["super+shift+;"],
-        "command": "ace_jump_word"
-    },
-    {
-        "keys": ["super+shift+'"],
-        "command": "ace_jump_char"
-    },
-    {
-        "keys": ["super+shift+."],
-        "command": "ace_jump_line"
-    },
-    {
-        "keys": ["super+shift+,"],
-        "command": "ace_jump_within_line"
-    },
-    {
-        "keys": ["ctrl+;"],
-        "command": "ace_jump_select"
-    },
-    {
-        "keys": ["ctrl+'"],
-        "command": "ace_jump_add_cursor"
-    },
-    {
-        "keys": ["ctrl+."],
-        "command": "ace_jump_after"
-    },
+	// - ace-jump
+	{
+		"keys": ["super+shift+;"],
+		"command": "ace_jump_word"
+	},
+	{
+		"keys": ["super+shift+'"],
+		"command": "ace_jump_char"
+	},
+	{
+		"keys": ["super+shift+."],
+		"command": "ace_jump_line"
+	},
+	{
+		"keys": ["super+shift+,"],
+		"command": "ace_jump_within_line"
+	},
+	{
+		"keys": ["ctrl+;"],
+		"command": "ace_jump_select"
+	},
+	{
+		"keys": ["ctrl+'"],
+		"command": "ace_jump_add_cursor"
+	},
+	{
+		"keys": ["ctrl+."],
+		"command": "ace_jump_after"
+	},
 
-   	// MoveTab
+	// - MoveTab
 	{
 		"keys": ["alt+n"],
 		"command": "move_tab",
@@ -109,6 +110,20 @@
 		"command": "move_tab",
 		"args": { "position": "+1" }
 	},
+
+	// - SublimeERB
+	{ "keys": ["ctrl+shift+."], "command": "erb" },
+
+	// - NeoVintageous
+	{ "keys": ["H"],  "command": "_nv_feed_key", "args": {"key": "0"},  "context": [{"key": "vi_command_mode_aware"}]},
+	{ "keys": ["L"],  "command": "_nv_feed_key", "args": {"key": "$"},  "context": [{"key": "vi_command_mode_aware"}]},
+	// Make this a bit like to "https://github.com/terryma/vim-multiple-cursors"
+	// Get the corresponding sublime command here: "https://www.sublimetext.com/docs/3/multiple_selection_with_the_keyboard.html"
+	{ "keys": ["ctrl+n"], "command": "find_under_expand" },
+	{ "keys": ["ctrl+x"], "command": "find_under_expand_skip" },
+	{ "keys": ["ctrl+p"], "command": "soft_undo" },
+	{ "keys": ["alt+a"], "command": "find_all_under" },
+
 	//
 	// End Overwritten
 	// ========================================================================
