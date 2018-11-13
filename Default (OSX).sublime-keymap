@@ -157,7 +157,14 @@
     // ========================================================================
 
 
-    { "keys": ["super+."], "command": "edit_settings", "args": {"base_file": "${packages}/Default/Default (OSX).sublime-keymap"} },
+    { "keys": ["super+.", "super+."], "command": "edit_settings", "args": {"base_file": "${packages}/Default/Default (OSX).sublime-keymap"} },
+    { "keys": ["super+,"], "command": "pass" },
+    { "keys": ["super+,", "super+,"], "command": "edit_settings", "args":
+        {
+            "base_file": "${packages}/Default/Preferences.sublime-settings",
+            "default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
+        }
+    },
 
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // Text Modification
@@ -230,7 +237,8 @@
     { "keys": ["alt+]"], "command": "jump_forward" },
 
     // Code folding
-    { "keys": ["super+k", "super+u"], "command": "unfold" },
+    { "keys": ["super+k", "super+,"], "command": "unfold" },
+    { "keys": ["super+k", "super+."], "command": "fold" },
 
     //
     // Modified Tab Navigation
