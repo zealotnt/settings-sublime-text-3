@@ -135,6 +135,23 @@
     { "keys": ["ctrl+p"], "command": "soft_undo", "context": [{"key": "vi_command_mode_aware"}]},
     { "keys": ["alt+a"], "command": "find_all_under", "context": [{"key": "vi_command_mode_aware"}]},
 
+    // - Enhanced Sidebar
+    {
+        "keys": ["super+o", "super+c"],
+        "command": "side_bar_open_in_browser",
+        "args": {
+            "paths": [],
+            "type": "testing",
+            "browser": "chrome"
+        }
+    },
+    {
+        "keys": ["super+o", "super+n"],
+        "command": "side_bar_reveal",
+        "args": {
+            "paths": [],
+        }
+    },
     //
     // End Overwritten
     // ========================================================================
@@ -142,7 +159,7 @@
 
     { "keys": ["super+."], "command": "edit_settings", "args": {"base_file": "${packages}/Default/Default (OSX).sublime-keymap"} },
 
-    //
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // Text Modification
     //
     // { "keys": ["ctrl+w"], "command": "close_file" }, // close -> will close sublime after no file left
@@ -164,8 +181,9 @@
         ]
     },
     { "keys": ["super+i"], "command": "auto_complete" },
+    // ========================================================================
 
-    //
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // Text selection
     //
     // { "keys": ["ctrl+shift+w"], "command": "expand_selection", "args": {"to": "word"} }, what is this for ???
@@ -175,7 +193,7 @@
     { "keys": ["ctrl+shift+a"], "command": "move_to", "args": {"to": "bol", "extend": true} },
     { "keys": ["ctrl+shift+e"], "command": "move_to", "args": {"to": "eol", "extend": true} },
 
-    //
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // Cursor movement
     //
     {"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 20.0}, "context": [{ "key": "setting.command_mode" }]},
@@ -191,7 +209,7 @@
     { "keys": ["f3"], "command": "find_next" },
     { "keys": ["shift+f3"], "command": "find_prev" },
 
-    //
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // View changing
     //
     // { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
@@ -210,6 +228,9 @@
     { "keys": ["alt+right"], "command": "jump_forward" },
     { "keys": ["alt+["], "command": "jump_back" },
     { "keys": ["alt+]"], "command": "jump_forward" },
+
+    // Code folding
+    { "keys": ["super+k", "super+u"], "command": "unfold" },
 
     //
     // Modified Tab Navigation
@@ -287,22 +308,6 @@
         // To open using absolute path on MAC OS
         // https://superuser.com/questions/467693/how-to-open-file-using-only-keyboard-in-sublime-text
         "keys": ["super+o", "super+o"], "command": "prompt_open_file"
-    },
-    {
-        "keys": ["super+o", "super+c"],
-        "command": "side_bar_open_in_browser",
-        "args": {
-            "paths": [],
-            "type": "testing",
-            "browser": "chrome"
-        }
-    },
-    {
-        "keys": ["super+o", "super+n"],
-        "command": "side_bar_reveal",
-        "args": {
-            "paths": [],
-        }
     },
 
     { "keys": ["ctrl+q"], "command": "file_diff_menu" },
