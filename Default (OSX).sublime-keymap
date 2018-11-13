@@ -235,18 +235,6 @@
     //
     // Modified Tab Navigation
     //
-    // {
-    //     "command": "next_view_in_stack",
-    //     "keys": [
-    //         "alt+l"
-    //     ]
-    // },
-    // {
-    //     "command": "prev_view_in_stack",
-    //     "keys": [
-    //         "alt+h"
-    //     ]
-    // },
     {
         "keys": ["ctrl+tab"],
         "command": "next_view"
@@ -289,16 +277,12 @@
     { "keys": ["super+b", "super+shift+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
     { "keys": ["super+b", "super+shift+right"], "command": "move_to_neighboring_group" },
 
-    // { "keys": ["ctrl+w", "h"], "command": "focus_neighboring_group", "args": {"forward": false} },
-    // { "keys": ["ctrl+w", "l"], "command": "focus_neighboring_group", "args": {"forward": true} },
-
 
     //
     // Clipboard modification
     //
     { "keys": ["super+k", "super+p"], "command": "copy_path" },
     { "keys": ["super+k", "super+i"], "command": "side_bar_copy_name" },
-    // { "keys": ["ctrl+shift+a"], "command": "select_all" },
 
 
     //
@@ -319,28 +303,12 @@
             "key": "setting.anf_panel"
         }]
     },
-    // {
-    //  "keys": ["ctrl+shift+f"],
-    //  "command": "side_bar_find_in_project_folder",
-    //  "args": {
-    //      "paths": []
-    //  }
-    // },
 
     //
     // Context menu
     //
     { "keys": ["super+k", "super+l"], "command": "context_menu" },
     { "keys": ["super+k", "super+f"], "command": "reveal_in_side_bar"},
-    // { "keys": ["super+k", "super+f"],
-    //   "command": "chain",
-    //   "args": {
-    //     "commands": [
-    //       ["focus_side_bar"],
-    //       ["reveal_in_side_bar"],
-    //     ]
-    //   },
-    // },
     { "keys": ["super+\\"], "command": "focus_side_bar" },
     { "keys": ["super+t"], "command": "focus_side_bar" },
     {
