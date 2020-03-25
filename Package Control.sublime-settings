@@ -2,6 +2,11 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"NeoVintageous",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"Terminal",
+		"TypeScript"
 	],
 	"installed_packages":
 	[
@@ -32,6 +37,7 @@
 		"HTML-CSS-JS Prettify",
 		"HTML2Haml",
 		"Hyperledger Composer",
+		"jsonnet syntax",
 		"MarkdownEditing",
 		"MarkdownPreview",
 		"MoveTab",
@@ -51,6 +57,7 @@
 		"SublimeLinter",
 		"SyncedSideBar",
 		"Terminal",
+		"Terraform",
 		"TrailingSpaces",
 		"TypeScript",
 		"YAML Nav"
